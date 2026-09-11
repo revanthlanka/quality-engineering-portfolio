@@ -14,14 +14,14 @@ export default function App(){
  useEffect(()=>{document.documentElement.classList.toggle('dark',dark);localStorage.setItem('qa-theme',dark?'dark':'light')},[dark])
  return <div className="app">
   <header className="header"><div className="container nav">
-   <a className="brand" href="#home">RQ<span>.</span></a>
+   <a className="brand" href="#home">Revanth Lanka<span>.</span></a>
    <nav className={menu?'open':''}>{nav.map(([n,h])=><a key={h} href={h} onClick={()=>setMenu(false)}>{n}</a>)}</nav>
    <div className="nav-actions"><ThemeToggle dark={dark} onToggle={()=>setDark(v=>!v)}/><a className="nav-cta" href="#contact">Let's Connect</a><button className="menu-button" onClick={()=>setMenu(v=>!v)} aria-label="Menu">{menu?<X/>:<Menu/>}</button></div>
   </div></header>
 
   <main>
    <section id="home" className="hero"><div className="container hero-grid">
-    <div><p className="eyebrow">LEAD SOFTWARE TESTER / QUALITY ENGINEER</p><h1>Engineering confidence<br/><em>into every release.</em></h1>
+    <div><p className="eyebrow">AUTOMATION TESTER / QUALITY ENGINEER</p><h1>Engineering confidence<br/><em>into every release.</em></h1>
     <p className="hero-copy">Quality engineering across enterprise banking systems — from automated IVR journeys and REST APIs to middleware, host integrations, CI/CD pipelines and production validation.</p>
     <div className="hero-actions"><a className="button primary" href="#experience">View Experience <ArrowRight size={16}/></a><a className="button" href="#stack">Explore Stack</a></div>
     <div className="hero-stats">{[['IVR','Automation'],['API','Engineering'],['E2E','Quality'],['CI/CD','Delivery']].map(([a,b])=><div key={a}><strong>{a}</strong><span>{b}</span></div>)}</div></div>
@@ -51,7 +51,7 @@ export default function App(){
    <section className="section mindset"><div className="container"><p className="eyebrow">05 / QUALITY MINDSET</p><div className="mind-grid">{[['01','Understand the journey','Start with the customer and business outcome.'],['02','Challenge the boundary','Test negative paths, integrations and failure modes.'],['03','Trace the evidence','Use API responses, logs and system behavior to find the cause.'],['04','Automate intelligently','Build reusable coverage where repeatability creates value.']].map(([n,t,d])=><div key={n}><span>{n}</span><h3>{t}</h3><p>{d}</p></div>)}</div></div></section>
 
    <section id="contact" className="section contact"><div className="container contact-grid"><div><p className="eyebrow muted">06 / CONTACT</p><h2>Let's talk about<br/><em>quality engineering.</em></h2><p>Open to conversations around software testing, automation, API quality, IVR engineering and quality leadership.</p></div>
-    <div className="contact-card"><div><span>Email</span><a href="mailto:your.email@example.com"><Mail size={14}/> your.email@example.com</a></div><div><span>LinkedIn</span><a href="#"><Linkedin size={14}/> linkedin.com/in/your-profile</a></div><div><span>GitHub</span><a href="#"><Github size={14}/> github.com/your-profile</a></div><a className="button primary full" href="mailto:your.email@example.com">Start a Conversation <ArrowRight size={16}/></a></div>
+    <div className="contact-card"><div><span>Email</span><a href="mailto:revanth.lanka@gmail.com"><Mail size={14}/> revanth.lanka@gmail.com</a></div><div><span>LinkedIn</span><a href="https://www.linkedin.com/in/revanth-lanka-a8331ab8/" target="_blank" rel="noopener noreferrer"><Linkedin size={14}/>https://www.linkedin.com/in/revanth-lanka-a8331ab8/</a></div><div><span>GitHub</span><a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer"><Github size={14}/> github.com/your-profile</a></div><a className="button primary full" href="mailto:revanth.lanka@gmail.com">Start a Conversation <ArrowRight size={16}/></a></div>
    </div></section>
   </main>
   <footer><div className="container footer"><span>RQ. / QUALITY ENGINEERING</span><span>React + TypeScript + Vite</span></div></footer>
