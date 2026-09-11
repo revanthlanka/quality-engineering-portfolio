@@ -1,31 +1,35 @@
-# QA Engineer Portfolio — Modern React Edition
+# Lead Quality Engineering Portfolio
 
-Stack:
-- React 19.3
-- TypeScript
-- Vite
-- Lucide React
-- Component-based architecture
-- Local theme persistence
-- Responsive UI
-- Interactive capability filtering
+Modern React + TypeScript + Vite portfolio for a Lead Software Tester / Quality Engineer.
 
-## Run locally
+## Important
+
+Do **not** double-click the source `index.html`. The `/src/main.tsx` file is React source code and must be compiled by Vite.
+
+### Windows
+
+1. Install Node.js 20+ (Node 22 LTS is fine).
+2. Open this folder in PowerShell / Command Prompt.
+3. Run:
 
 ```bash
 npm install
 npm run dev
 ```
 
-Then open the local URL shown by Vite.
+4. Open the local address Vite prints, normally `http://localhost:5173/`.
 
-## Production build
+Or double-click `START-PORTFOLIO.bat`. It installs dependencies if needed and starts the development server.
+
+## Production
 
 ```bash
 npm run build
 npm run preview
 ```
 
-Replace the placeholder email, LinkedIn and GitHub URLs in `src/App.tsx`.
+The production files are created in `dist/`.
 
-The portfolio content is driven from `src/data/portfolio.ts`, so your skills and experience can be updated without rewriting the UI components.
+## Tech
+
+React 19 + TypeScript + Vite + Lucide React.
