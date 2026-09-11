@@ -16,14 +16,14 @@ export default function App(){
   <header className="header"><div className="container nav">
    <a className="brand" href="#home">Revanth Lanka<span>.</span></a>
    <nav className={menu?'open':''}>{nav.map(([n,h])=><a key={h} href={h} onClick={()=>setMenu(false)}>{n}</a>)}</nav>
-   <div className="nav-actions"><ThemeToggle dark={dark} onToggle={()=>setDark(v=>!v)}/><a className="nav-cta" href="#contact">Let's Connect</a><button className="menu-button" onClick={()=>setMenu(v=>!v)} aria-label="Menu">{menu?<X/>:<Menu/>}</button></div>
+   <div className="nav-actions"><ThemeToggle dark={dark} onToggle={()=>setDark(v=>!v)}/><a className="nav-cta secondary" href="/resume.pdf" download>Download Resume</a><a className="nav-cta" href="#contact">Let's Connect</a><button className="menu-button" onClick={()=>setMenu(v=>!v)} aria-label="Menu">{menu?<X/>:<Menu/>}</button></div>
   </div></header>
 
   <main>
    <section id="home" className="hero"><div className="container hero-grid">
     <div><p className="eyebrow">AUTOMATION TESTER / QUALITY ENGINEER</p><h1>Engineering confidence<br/><em>into every release.</em></h1>
     <p className="hero-copy">Quality engineering across enterprise banking systems — from automated IVR journeys and REST APIs to middleware, host integrations, CI/CD pipelines and production validation.</p>
-    <div className="hero-actions"><a className="button primary" href="#experience">View Experience <ArrowRight size={16}/></a><a className="button" href="#stack">Explore Stack</a></div>
+    <div className="hero-actions"><a className="button primary" href="#experience">View Experience <ArrowRight size={16}/></a><a className="button" href="#stack">Explore Stack</a><a className="button primary" href="/resume.pdf" download>Download Resume <ArrowDownRight size={16}/></a></div>
     <div className="hero-stats">{[['IVR','Automation'],['API','Engineering'],['E2E','Quality'],['CI/CD','Delivery']].map(([a,b])=><div key={a}><strong>{a}</strong><span>{b}</span></div>)}</div></div>
     <div className="architecture">
       <div className="arch-head"><span>QUALITY / SYSTEM VIEW</span><span className="online">● ONLINE</span></div>
