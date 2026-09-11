@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
+import { Download } from 'lucide-react';
 import { ArrowDownRight, ArrowRight, CheckCircle2, Github, Linkedin, Mail, Menu, X } from 'lucide-react'
 import SectionTitle from './components/SectionTitle'
 import ThemeToggle from './components/ThemeToggle'
