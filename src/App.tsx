@@ -24,7 +24,7 @@ export default function App(){
    <section id="home" className="hero"><div className="container hero-grid">
     <div><p className="eyebrow">AUTOMATION TESTER / QUALITY ENGINEER</p><h1>Engineering confidence<br/><em>into every release.</em></h1>
     <p className="hero-copy">Quality engineering across enterprise banking systems — from automated IVR journeys and REST APIs to middleware, host integrations, CI/CD pipelines and production validation.</p>
-    <div className="hero-actions"><a className="button primary" href="#experience">View Experience <ArrowRight size={16}/></a><a className="button" href="#stack">Explore Stack</a></div><a a className="button" href="/resume.pdf"  download="Revanth-Lanka-Resume.pdf"  className="btn btn-primary"> <Download size={18} /> Download Resume</a>
+    <div className="hero-actions"><a className="button primary" href="#experience">View Experience <ArrowRight size={16}/></a><a className="button" href="#stack">Explore Stack</a></div><a className="button" href="/resume.pdf"  download="Revanth-Lanka-Resume.pdf"  className="btn btn-primary"> <Download size={18} /> Download Resume</a>
     <div className="hero-stats">{[['IVR','Automation'],['API','Engineering'],['E2E','Quality'],['CI/CD','Delivery']].map(([a,b])=><div key={a}><strong>{a}</strong><span>{b}</span></div>)}</div></div>
     <div className="architecture">
       <div className="arch-head"><span>QUALITY / SYSTEM VIEW</span><span className="online">● ONLINE</span></div>
