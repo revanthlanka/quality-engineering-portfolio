@@ -45,7 +45,7 @@ export default function App(){
    </div></section>
 
    <section id="stack" className="section stack-section"><div className="container"><SectionTitle eyebrow="04 / TECHNOLOGY STACK" title={<>The tools behind<br/><em>the quality.</em></>} description="A practical stack spanning test design, automation, observability, deployment and collaboration."/>
-    <div className="stack-grid">{stack.map(([name,items])=><div className="stack-card" key={name}><h3>{name}</h3><div className="chips">{(items as string[]).map(x=><span key={x}>{x}</span>)}</div></div>)}</div>
+    <div className="stack-grid">{stack.map(([name,items])=><div className="stack-card" key={name}><h3>{name}</h3><div className="chips">{items.map(x=><span key={x}>{x}</span>)}</div></div>)}</div>
    </div></section>
 
    <section className="section mindset"><div className="container"><p className="eyebrow">05 / QUALITY MINDSET</p><div className="mind-grid">{[['01','Understand the journey','Start with the customer and business outcome.'],['02','Challenge the boundary','Test negative paths, integrations and failure modes.'],['03','Trace the evidence','Use API responses, logs and system behavior to find the cause.'],['04','Automate intelligently','Build reusable coverage where repeatability creates value.']].map(([n,t,d])=><div key={n}><span>{n}</span><h3>{t}</h3><p>{d}</p></div>)}</div></div></section>

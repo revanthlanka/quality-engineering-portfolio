@@ -7,7 +7,7 @@ export const capabilities = [
   { id: 'leadership', label: 'LEADERSHIP', title: 'Quality Enablement', description: 'Mentoring, code reviews, defect triage, test strategy, reporting and Agile delivery.', tags: ['JIRA-Xray', 'HP ALM', 'Agile', 'Mentoring'] },
 ]
 
-export const stack = [
+export const stack: Array<[string, string[]]> = [
   ['IVR & Voice', ['Cyara','Velocity Campaigns','DTMF','Speech Recognition','Call Routing']],
   ['API & Automation', ['REST API','Postman','Bruno','JavaScript','Java','Node.js','Gulp','Cucumber BDD','JSON']],
   ['Quality Engineering', ['Functional','Integration','Regression','Negative','Smoke','Sanity','SIT','E2E','Risk-Based Testing']],
